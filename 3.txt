@@ -1,0 +1,12 @@
+
+Table: Users
+Attributes: UserId, Name
+
+Table: Name Of API
+Attributes: API_code, Name
+
+Table: API CallLog
+Attributes: SNo, UserId,API_code, ResponseTime
+
+select max(response time) from API CallLog
+select UserId, API_Code, Max(ResponseTime) from API_CallLog group by UserId
